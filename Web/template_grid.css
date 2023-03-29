@@ -1,13 +1,41 @@
+*{
+    background-color: black;
+}
 .container{
     display: grid;
     height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px auto auto 200px;
     grid-template-areas:
     "azul azul azul azul azul azul"
+    "menu menu menu menu menu menu"
     ". verde verde verde roxo ."
     ". laranja laranja laranja2 laranja2 ."
     "azul2 azul2 azul2 azul2 azul2 azul2"
     ;
 }
+.menu ul li:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px 0.5px;
+}
+.menu{
+    grid-area: menu;
+}
+.menu ul{
+    list-style: nome;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.menu ul li{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: aqua;
+    color: rgb(3, 3, 3);
+    font-size: 15pt;
+}
+
 .main-content{
     background-color: green;
     grid-area: verde;
