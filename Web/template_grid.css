@@ -1,0 +1,58 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+    "azul azul azul azul azul azul"
+    ". verde verde verde roxo ."
+    ". laranja laranja laranja2 laranja2 ."
+    "azul2 azul2 azul2 azul2 azul2 azul2"
+    ;
+}
+.main-content{
+    background-color: green;
+    grid-area: verde;
+
+}
+.box{
+    display: grid;
+    color: aliceblue;
+    font-size: 15pt;
+    align-items: center;
+    justify-content: center;
+    margin: 1px 3px 3px 3px;
+}
+.box:hover{
+    transform: scale(1.1,1.1);
+}
+
+.sidebar{
+    background-color: blueviolet;
+    grid-area: roxo;
+
+}
+.twin{
+    background-color: orange;
+    grid-area: laranja;
+ 
+}
+.twin2{
+    background-color: orange;
+    grid-area: laranja2;
+
+}
+.header{
+    background-image: url(./img/Lighthouse.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-color: blue;
+    grid-area: azul;
+    
+    
+}
+.footer{
+    background-image: url(./img/Koala.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-color: blue;
+    grid-area: azul2;
+}
